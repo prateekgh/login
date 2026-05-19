@@ -94,7 +94,7 @@ clock_button = WebDriverWait(driver, 10).until(
 # Print the button text
 print("Button text found:", clock_button.text)
 
-# clock_button.click()
+clock_button.click()
 
 time.sleep(2)
 
