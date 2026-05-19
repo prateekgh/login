@@ -2,9 +2,9 @@ name: Run Login Script Twice Daily
 
 on:
   schedule:
-    - cron: "15 4 * * *"    # 10:00 AM NPT → 04:15 UTC
-    - cron: "15 13 * * *"   # 7:00 PM NPT → 13:15 UTC
-  workflow_dispatch:         # Allows manual trigger
+    - cron: "15 4 * * 1-5"   # 10:00 AM NPT → 04:15 UTC, Mon-Fri
+    - cron: "15 13 * * 1-5"  # 7:00 PM NPT → 13:15 UTC, Mon-Fri
+  workflow_dispatch:          # Allows manual trigger
 
 jobs:
   run-login:
